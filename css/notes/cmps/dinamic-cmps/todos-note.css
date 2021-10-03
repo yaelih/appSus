@@ -1,0 +1,22 @@
+.styleTodo{
+    text-decoration: line-through;
+ 
+}
+.todo{
+    list-style: none;
+    display: flex;
+     justify-content: center;
+   align-items: center;
+    gap:5px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+.todo input[type=checkbox]:checked {
+    background-color: transparent;
+    color:rgb(124, 124, 124);
+}
+.note-preview-todos ul{
+    padding: 0;
+    width: 100%;
+}

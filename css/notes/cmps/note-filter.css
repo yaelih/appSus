@@ -1,0 +1,10 @@
+.note-filter{
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px 30px;
+    border-radius: 5px;
+    padding: 5px;
+}

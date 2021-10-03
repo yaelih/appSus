@@ -1,0 +1,36 @@
+.add-note{
+    border-radius: 5px;
+background-color: white;
+
+   height: 50px;
+   padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: row;
+  align-items: center;
+  gap:5px;
+  top:20px;
+  margin:50px 20px 30px;
+}
+.add-note-input{
+    flex-basis: 70%;
+}
+.note-type-btns{
+    display: flex;
+    justify-content: center;
+  
+    align-items: center;
+  align-items: center;
+  gap:5px;
+}
+@media (max-width:770px) {
+    .add-note{
+        flex-direction: column;
+        height: 83px;
+    }
+        .add-note-input{
+            width: 100%;
+            flex-basis: 100%;
+        }
+}

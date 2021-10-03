@@ -1,0 +1,56 @@
+/* EMAIL-COMPOSE */
+.email-compose {
+    /* border: 1px solid #5f5f5f; */
+    box-shadow: 1px 1px 4px 1px rgba(117, 117, 117, 0.7);
+}
+.email-compose .email-header {
+    background-color: #5f5f5f;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.email-compose #subject {
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor:text;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+.email-compose .subject-container {
+    border-bottom: 1px solid #5f5f5f;
+    padding: 10px 10px;
+}
+
+.email-compose textarea {
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    cursor:text;
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+.email-compose .email-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.email-compose .email-footer .send-btn {
+    background-color: royalblue;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.email-compose .email-footer .delete-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+}

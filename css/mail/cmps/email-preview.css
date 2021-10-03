@@ -1,0 +1,29 @@
+/* EMAIL-PREVIEW */
+.email-preview {
+    border-bottom: 1px solid gray;
+    display: grid;
+    grid-template-columns: 30px 0.1fr 0.9fr 80px 30px 30px;
+    align-items: center;
+    cursor: pointer;
+}
+.email-preview:hover {
+    box-shadow: 1px 1px 4px 1px rgba(117, 117, 117, 0.7);
+}
+
+.email-preview .email-subjet {
+    padding-left: 10px;
+}
+
+.email-preview {
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.email-preview.read {
+    background-color: #f3f3f3;
+    font-weight: 400;
+}
+
+.email-preview .fas.fa-star {
+    color: #ffc760;
+}

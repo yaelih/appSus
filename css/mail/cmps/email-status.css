@@ -1,0 +1,15 @@
+/* EMAIL-STATUS */
+.email-status {
+    margin: 30px 10px;
+    border-radius: 10px;
+    background-color: rgba(221, 160, 209, 0.26);
+    height: 20px;
+}
+
+.email-status .read {
+    border-radius: 10px;
+    background-color: #782057;
+    height: 100%;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,71 @@
+.user-msg {
+    position: fixed;
+    top: 111px;
+    height: 79px;
+    left: 85%;
+    width: 20%;
+    padding: 10px;
+    transform: translate(-50%, 0);
+    background-color: whitesmoke;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.user-msg p {
+    margin: 5px;
+}
+
+.success {
+    border: 3px solid rgb(37, 206, 37);
+}
+
+.error {
+    border: 3px solid red;
+}
+
+.user-msg .close-btn {
+    border: none;
+    border-radius: 50px;
+    padding: 2px 6px;
+    color: white;
+    font-size: 0.6rem;
+    cursor: pointer;
+}
+
+.user-msg.success .close-btn {
+    background-color: rgb(37, 206, 37);
+}
+
+.user-msg.error .close-btn {
+    background-color: red;
+}
+
+.user-msg .type {
+    text-align: left;
+    font-weight: 700;
+}
+
+.user-msg.success .type {
+    color: rgb(37, 206, 37);
+}
+
+.user-msg.error .type {
+    color: red;
+}
+@media (max-width:500px) {
+    .user-msg {
+width: 200px;
+left: 75%;
+    }
+}
+.user-msg-transition-enter-active {
+    transition: all .3s ease;
+  }
+  .user-msg-transition-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .user-msg-transition-enter, .user-msg-transition-to
+  /* .slide-fade-leave-active below version 2.1.8 */ {
+    transform: translateX(10px);
+    opacity: 0;
+  }

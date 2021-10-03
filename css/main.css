@@ -1,0 +1,126 @@
+@import './mail/email-app.css';
+@import './notes/notes.css';
+@import './app-header.css';
+@import 'user-msg.css';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=PT+Sans:ital@1&display=swap');
+@import './app-footer.css';
+body{
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'PT Sans', sans-serif;
+}
+.home-main{
+     top: 100px;
+    position: relative;
+    background-color: #d8d8d8;
+    height:90vh;
+}
+.home-main h2{
+    position: absolute;
+    font-size: 2rem;
+    right: 20px;
+  
+   
+}
+.home-main h2 .connect{
+    color: #9b9999;
+   
+}
+.home-main h2 .collaborate{
+    color: #6d6e71;
+}
+.home-main h2 .create{
+    color: #782057;
+}
+.home-responsive{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+   
+}
+.try-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 28vh;
+
+    top: 506px;
+    position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+}
+
+.email{
+    background-color: #782057;
+}
+.notes{
+    background-color: #89416e;
+}
+.desc-home{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.go-to-home{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+    width: 350px;
+ position: relative;
+   
+}
+.go-to-home button{
+    cursor: pointer;
+    height: 30px;
+    width: 120px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    transition: 1s;
+}
+.go-to-home button:hover{
+    background-color: #8d8d8d;
+}
+.go-to-icon
+{
+height: 90px;
+width: 90px;
+border-radius: 50px;
+box-shadow: 0 5px 8px #000;
+background-color: #d1d1d1 ;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: -40px
+}
+.go-to-icon i{
+    font-size: 1.6rem;
+    color: #404041;
+}
+.go-to-home h3{
+    margin-top: 20px;
+}
+.go-to{
+    background-color: #8d8d8d;
+    width: 100%;
+    min-height: 28vh;
+}
+@media(max-width:715px){
+    .try-home{
+        gap:20px;
+        flex-direction: column;width: 100%;
+        top: 349px;
+    }
+    .go-to-home{
+        width: 100%;
+    }
+    .home-responsive{
+        position: relative;
+        top: -82px;
+    }
+}

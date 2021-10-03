@@ -1,0 +1,62 @@
+/* EMAIL-DETAILS */
+.email-details .to,
+.email-details .subject {
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+
+.email-details .from {
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+.email-details .body {
+    white-space: pre-line;
+    font-size: 1.3rem;
+}
+
+.email-details .actions {
+    text-align: end;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #782057;
+}
+
+.email-details .actions * {
+    padding-right: 1.2rem;
+    font-size: 1.2rem;
+}
+
+.email-details .actions i {
+    cursor: pointer;
+}
+
+.email-details .actions .fa-sticky-note {
+    color: black;
+}
+
+.email-details .actions i:hover {
+    color: #782057 ; 
+    text-shadow: 0 0 3px #782057;
+    /* text-shadow: 0 0 3px #782057, 0 0 5px #782057; */
+}
+
+.email-details .color {
+    color: #782057 ;   
+}
+
+.email-details .fas.fa-star {
+    color: #ffc760;
+}
+
+@media (max-width: 480px) {
+    .email-details .actions {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .email-details .actions span{
+        grid-column-start: 4 span;
+        margin-bottom: 8px;
+      }
+}

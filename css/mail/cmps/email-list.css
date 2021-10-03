@@ -1,0 +1,11 @@
+/* EMAIL-LIST */
+.email-list {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.list-container .no-results {
+    text-align: center;
+    font-size: 1.2rem;
+}

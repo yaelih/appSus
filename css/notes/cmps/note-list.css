@@ -1,0 +1,86 @@
+.note-gallery{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+
+  
+ 
+}
+.ddd{
+    
+
+    margin-bottom: 1.5vw;
+    /* padding-top: 1vw; */
+    /* padding: 10px 20px 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: center;
+    /* background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 4px 1px #00000038; */
+    overflow: hidden;
+    break-inside: avoid;
+    border-radius: 5px;
+    /* min-height: 200px; */
+}
+/* .notes-list{
+    
+} */
+
+.note-list {
+    columns: 1;
+    column-gap: 1.5vw;
+}
+
+@media (min-width:650px) {
+    .note-list {
+        columns: 2;
+    }
+}
+
+@media (min-width:850px) {
+    .note-list {
+        columns: 3;
+    }
+}
+
+@media (min-width:1150px) {
+    .note-list {
+        columns: 4;
+    }
+}
+
+@media (min-width:1450px) {
+    .note-list {
+        columns: 5;
+    }
+}
+.color-palete:hover i{
+    color: rgb(100, 0, 62);
+}
+.color-container{
+    position: relative;
+}
+.color-input{
+    opacity: 0;
+    width: 20px;
+}
+.btn-note-type{
+    background-color: transparent;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+.btn-note-type:hover i{
+    color: rgb(100, 0, 62);
+}
+.btn-note-type i{
+    font-size: 1.2rem;
+}
+.note-container a i{
+color: black;
+}

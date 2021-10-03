@@ -1,0 +1,91 @@
+@import './cmps/email-compose.css';
+@import './cmps/email-list.css';
+@import './cmps/email-preview.css';
+@import './cmps/email-filter.css';
+@import './cmps/email-status.css';
+@import './pages/email-details.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* EMAIL-APP */
+.email-app {
+    position: relative;
+    top: 100px;
+    display: flex;
+    /* padding: 10px; */
+}
+
+.email-app nav {
+    margin-top: 20px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 15%;
+    min-width: 190px;
+}
+
+
+/* .email-app nav li { */
+.email-app nav a {
+    padding-left: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    color: unset;
+}
+
+.email-app nav a:not(:first-child):hover {
+    background-color: rgba(222, 222, 222, 0.5);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.email-app nav a:not(:first-child) {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.email-app nav .compose-btn {
+    background-color: white;
+    border-radius: 30px;
+    padding: 3px 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-bottom: 0.8rem;
+}
+    
+.email-app .active-link {
+    /* background-color: rgba(255, 182, 182, 0.5); */
+    background-color: rgba(221, 160, 209, 0.26);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* color: #ff1e1e; */
+    color: #782057;
+    font-weight: 600;
+}
+
+.email-app .main-content {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .email-app nav {
+        flex-basis: 15%;
+        min-width: 50px;
+        padding-right: 10px;
+    }
+    .email-app nav .wide {
+        display: none;
+    }
+    .email-app nav a {
+        padding-left: 10px;
+    }
+    .email-app nav .compose-btn {
+        padding: 1px 6px;
+    }
+}
